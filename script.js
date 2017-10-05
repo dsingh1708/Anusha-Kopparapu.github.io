@@ -45,7 +45,7 @@ function myFunction() {
             }
         }
 }
- var divsions = ["contacts","groups","Div1", "Div2","Div3","Div4","Div5","Div6","Div7","aplhaList"];
+ var divsions = ["contacts","groups","Div1", "Div2","Div3","Div4","Div5","Div6","Div7","aplhaList","editpanel"];
     var visibleDiv = null;
     function visibility(divId) {
       if(visibleDiv === divId) {
@@ -81,13 +81,15 @@ function myFunction() {
     $('#Div5').hide();
     $('#Div6').hide();
     $('#Div7').hide();
+    $('#editpanel').hide();
 
     $('#view1').on('click', function() {
             $('#groups').show();
             $('#aplhaList').hide();
+            $('#editpanel').hide();
     });
 });
- var divs = ["Div1", "Div2","Div3","Div4","Div5","Div6","Div7"];
+ var divs = ["Div1", "Div2","Div3","Div4","Div5","Div6","Div7","editpanel"];
     var visibleDivId = null;
     function divVisibility(divId) {
       if(visibleDivId === divId) {
@@ -119,29 +121,37 @@ function myFunction() {
     $('#Div1').hide();
     $('#preview').on('click', function() {
             $('#Div1').show();
+             $('#editpanel').show();
+
     });
     $('#Div2').hide();
     $('#preview1').on('click', function() {
             $('#Div2').show();
+            $('#editpanel').show();
     });
     $('#Div3').hide();
     $('#preview2').on('click', function() {
             $('#Div3').show();
+            $('#editpanel').show();
     });
      $('#Div4').hide();
     $('#preview3').on('click', function() {
             $('#Div4').show();
+            $('#editpanel').show();
     });
     $('#Div5').hide();
     $('#preview4').on('click', function() {
             $('#Div5').show();
+            $('#editpanel').show();
     });
     $('#Div6').hide();
     $('#preview5').on('click', function() {
             $('#Div6').show();
+            $('#editpanel').show();
     });
     $('#Div7').hide();
     $('#preview6').on('click', function() {
             $('#Div7').show();
+            $('#editpanel').show();
     });
 });
