@@ -1,4 +1,4 @@
-function myFunction() {
+ function myFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -75,6 +75,7 @@ function myFunction() {
     $('#view').on('click', function() {
             $('#contacts').show();
             $('#aplhaList').show();
+            $('#groups').hide();
     });
     $('#groups').hide();
     $('#Div1').hide();
@@ -90,6 +91,7 @@ function myFunction() {
             $('#groups').show();
             $('#aplhaList').hide();
             $('#editpanel').hide();
+             $('#contacts').hide();
     });
 });
  var divs = ["Div1", "Div2","Div3","Div4","Div5","Div6","Div7","editpanel"];
