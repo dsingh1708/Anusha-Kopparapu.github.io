@@ -6,12 +6,31 @@
     margin-top: 10px;
     margin-bottom: 0px;
 }
+.no-gutter {
+
+    padding-right:0px;
+    
+}
+.gutter {
+      padding-left:0px;
+}
+@media (max-width: 767px) { 
+    .gutter    {
+        padding-left: 10px;
+        padding-right: 10px;
+      
+    }
+    .no-gutter    {
+        padding-left: 10px;
+        padding-right: 10px;
+      
+    }
+}
 .stylish-input-group .input-group-addon{
     background: white !important; 
 }
 .stylish-input-group .form-control{
-    border-right:0; /*
-    box-shadow:0 0 0; */
+    border-right:0; 
     border-color:#ccc;
     padding: 25px 25px;
 }
@@ -43,6 +62,10 @@ p{
 #alphaList{
     list-style: none; 
     padding: 0px;
-    margin: 0px
-    z-index: -10;
+    margin-right: 50px;
 }
+#id{
+  margin-right: 40px;
+  padding-left: 15px;
+}
+
